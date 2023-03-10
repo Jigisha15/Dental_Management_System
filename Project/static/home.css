@@ -1,0 +1,22 @@
+.carousel-item {
+    height: 80vh ;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.seperate{
+    display: flex;
+    justify-self: center;
+}
+
+.seperate .nav-item{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+/* 
+.carousel-control-prev-icon{
+    color: aliceblue;
+} */
+

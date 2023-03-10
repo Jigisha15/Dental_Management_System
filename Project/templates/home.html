@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+<div class="container-fluid mt-3">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb7_H-R111gjDwJPN9-665CEtrW66Xx16Iiw&usqp=CAU" class="d-block w-100 h-100" alt="..."> {% comment "" %}static/images/bckg1.jfif{% endcomment %}
+        <div class="carousel-caption d-none d-md-block text-white ">
+          <h1 class=""><b>A Dentist That Makes You Smile</b></h1>
+          <p class="h4">You are one appointment away from us... <br>
+            {% comment %} <button type="button" class="btn btn-primary" data-mdb-toggle="button" autocomplete="off">
+              Toggle button
+            </button> {% endcomment %}
+            <a href="{% url 'appointment' %}" class="text-decoration-none text-white"><b><i>Click Here</i></b></a> 
+          <br><br><br><br><br><br><br><br>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="static/images/img7.webp" class="d-block w-100 h-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h1><b>10 Years Of Experience & Expertise</b></h1>
+          <p class="h4">You are one appointment away from us... <br>
+            <a href="{% url 'appointment' %}" class="text-decoration-none text-white"><b><i>Click Here</i></b></a>
+            <br><br><br><br><br><br><br><br>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/img9.webp" class="d-block w-100 h-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h1><b>Build A Bond Of Trust</b></h1>
+          <p class="h4">You are one appointment away from us... <br><a href="{% url 'appointment' %}"
+              class="text-decoration-none text-white"><b class="hover-text-primary"><i>Click Here</i></b></a>
+            <br><br><br><br><br><br><br><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="fa fa-angle-left" style="font-size:40px" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="fa fa-angle-right" style="font-size:40px" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+{% endblock banner-slider %}
+
+
+
+
+
+{% block info %}
+<div class="container-fluid border border-dark mt-2 bg-dark  bg-opacity-25">
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <p>A genuine smile comes from the heart, but a healthy smile needs good dental care.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+   <cite title="Source Title">Wayne Chrisia</cite>
+    </figcaption>
+  </figure>
+</div>
+</div>
+</div>
+{% endblock info %}
+
+
+
+
+
+{% block about %}
+<div class="container-fluid  mt-3 pb-5">
+  <h3 class="text-center mt-4 pb-2"><b> About Us </b></h3>
+  <div class="row1 d-flex">
+    <div class="col-sm-6" style="padding: 10px;">
+      <div class="card d-flex align-items-center">
+        <img src="https://static.wixstatic.com/media/dabb20_e00c264ce472429084ae798c8fccaf70~mv2.jpg/v1/fill/w_640,h_660,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/dabb20_e00c264ce472429084ae798c8fccaf70~mv2.jpg" class="border border-dark card-img-top" alt="..." style="margin-top: 10px; width: 500px; height: 300px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="padding: 10px;">
+      <div class="card d-flex align-items-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREuUbV2W5vJFzuH2MhwQR57glHcFyN9SIw4Q&usqp=CAU" class="border border-dark card-img-top" alt="..." style="margin-top: 10px; width: 500px; height: 300px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+
+  <div class="row2 mt-5 d-flex">
+    <div class="col-sm-6" style="padding: 10px;">
+      <div class="card d-flex align-items-center">
+        <img src="https://www.heart.org/-/media/Images/News/2022/August-2022/0811DentistHealth_SC.jpg" class="border border-dark card-img-top" alt="..." style="margin-top: 10px; width: 500px; height: 300px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="padding: 10px;">
+      <div class="card d-flex align-items-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgbs1HlRY6s0xLBW3T953cQ_LUFOLXUFGAQ&usqp=CAU" class="border border-dark card-img-top" alt="..." style="margin-top: 10px; width: 500px; height: 300px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock about %}
+
+
+
+
+
+
+{% block testimonials %}
+<div class="container mt-5">
+  <h3 class="text-center mt-4 pb-2"><b> Testimonials </b></h3>
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Rohit Nagre</h5>
+              <p class="card-text">It is a very nice hospital</p>
+              {% comment %} <a href="#" class="btn btn-primary">Date & Time</a> {% endcomment %}
+              <p class="text-center"><b>Posted on,</b>21 Feb, 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Rushiraj Chaudhari</h5>
+              <p class="card-text">It is a very nice hospital</p>
+              {% comment %} <a href="#" class="btn btn-primary">Date & Time</a> {% endcomment %}
+              <p class="text-center"><b>Posted on,</b>21 Feb, 2023</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Nikita Rade</h5>
+              <p class="card-text">It is a very nice hospital</p>
+              {% comment %} <a href="#" class="btn btn-primary">Date & Time</a> {% endcomment %}
+              <p class="text-center"><b>Posted on,</b> 21 Feb, 2023</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Jigisha Ghanekar</h5>
+              <p class="card-text">It is a very nice hospital</p>
+              {% comment %} <a href="#" class="btn btn-primary">Date & Time</a> {% endcomment %}
+              <p class="text-center"><b>Posted on,</b>21 Feb, 2023</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      {% comment %} <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Name</h5>
+              <p class="card-text">Reply</p>
+              <a href="#" class="btn btn-primary">Date & Time</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Name</h5>
+              <p class="card-text">Reply</p>
+              <a href="#" class="btn btn-primary">Date & Time</a>
+            </div>
+          </div>
+        </div>
+      </div>{% endcomment %} 
+
+
+
+          
+    </div>
+</div>
+{% endblock testimonials %}
+
+
+

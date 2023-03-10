@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Blog{% endblock title %}
+
+{% block blog %}
+<div class="grid text-center d-flex mt-3" style="--bs-columns: 10; --bs-gap: 1rem;">
+    <div class="g-col-6" style="padding:40px; width:70vw; height: fit-content;">
+
+        <div class="card  shadow-lg" style="width: 60rem; line-height: normal;">
+            <h5 class="card-title fs-1">TAKE CARE OF YOUR TEETH AT HOME</h5>
+            <p class="card-text fs-6"><b>Title description,</b> 20 Feb, 2023</p>
+            <img src="https://www.brenhamfamilydental.com/wp-content/uploads/2015/07/cute_tooth_2-624x624.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-start"><p><b>We Offer</b> We offer a total scope of dental and cleanliness medications, performed by talented and energetic experts in our reality class medical procedure. Our medications run from protection dentistry (counting dental cleanliness, the treatment of jaw issues and delicate teeth, distinguishing gum malady), to pro dentistry, (for example, orthodontics, dental inserts, endodontics, and periodontics), to corrective arrangements, for example, teeth brightening. Our motivation is to separate ourselves as a medical procedure that gives far-reaching dentistry of the extremely most astounding quality that upgrades our patients’ lives. We work for our patients, who consistently will be treated with nobility, comprehension, and regard.</p></li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+
+          <div class="card mt-5 shadow-lg" style="width: 60rem;">
+              <h5 class="card-title fs-1"> WHAT ARE THOSE THINGS IN THE DENTIST’S OFFICE</h5>
+            <p class="card-text fs-6"><b>Title description,</b> 20 Feb, 2023</p>
+            <img src="https://post.healthline.com/wp-content/uploads/2019/04/Dentist_Teeth_Female_Patient-732x549-Thumbnail.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Ar Dentpot</b> At TruSmile, our staff resembles a family. Every part is an esteemed advantage for our group and assumes an essential job in the patient experience. From Jose, our neighborly driver that lifts you up from the air terminal to Adriana who helps manage you through the treatment procedure, to our capable group of specialists and partners who furnish our patients with unparalleled dental consideration; their essential objective is the equivalent: to give our patients an amazing dental ordeal that surpasses anything they would discover at home.
+
+                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+
+    </div>
+
+
+
+    {% comment %} RIGHT BOX  {% endcomment %}
+    <div class="g-col-4" style="padding:50px; width:30vw; height: fit-content;">
+        <div class="card" style="width: 23rem;">
+            <div class="card-body shadow-lg">
+              <h5 class="card-title text-start">Rushiraj Chaudhari</h5><hr>
+              <p class="card-text">Our best-in-class dental innovation, and in particular our proceeding with an expert training program for every one of the individuals from our dental group has a noteworthy influence in achieving that objective.</p>
+            </div>
+          </div><br><br><br>
+
+          <h2 class="mt-4">Our Doctors</h2>
+          <div class="card shadow-lg" style="margin-left:30px; width: 20rem; height: fit-content">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><b>Dr. Samidha Patil</b></p>
+              <h5 class="fs-6">Team Genuis</h5>
+              <hr>
+              <p class="card-text"><b>Dr. Shailesh Dongre</b></p>
+              <h5 class="fs-6">Orthodontist</h5>
+              <hr>
+              <p class="card-text"><b>Dr. Chitrang Kolawale</b></p>
+              <h5 class="fs-6">Endodontist</h5>
+              <hr>
+              <p class="card-text"><b>Dr. Ankita Nagrani</b></p>
+              <h5 class="fs-6">Endodontist</h5>
+              <hr>
+              <p class="card-text"><b>Dr. Sanket Patil</b></p>
+              <h5 class="fs-6">Prosthodontist</h5>
+              <hr>
+              <p class="card-text"><b>Dr. Bhushan Shinde</b></p>
+              <h5 class="fs-6">Prothodontist</h5>
+              <hr>
+              <p class="card-text"><b>Dr. Gururaj Bhosale</b></p>
+              <h5 class="fs-6">Oral and Maxillofacial Surgeon</h5>
+              <hr>
+              <p class="card-text"><b>Dr. Rajan Jadhav</b></p>
+              <h5 class="fs-6">Oral and Maxillofacial Surgeon</h5>
+              <hr>
+              <p class="card-text"><b>Dr. Aniruddha Kajale</b></p>
+              <h5 class="fs-6">Periodontist & Implantologist</h5>
+              <hr>
+
+              {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
+            </div>
+
+        </div><br><br><br>
+
+        {% comment %} <div class="box">
+            <h3 class="text-start">Our Tie-Up's</h3>
+            <div class="row1 d-flex">
+                <div class="card shadow" style="margin-top: 15px; width: 10rem;">
+                    <img class="card-img" src="static/images/i1.jfif" alt="Card image cap">
+                </div>
+
+                <div class="card shadow" style="margin-top: 15px; margin-left:15px; width: 10rem;">
+                    <img class="card-img" src="static/images/i1.jfif" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="row1 d-flex">
+                <div class="card shadow" style="margin-top: 15px; width: 10rem;">
+                    <img class="card-img" src="static/images/i1.jfif" alt="Card image cap">
+                </div>
+
+                <div class="card shadow" style="margin-top: 15px; margin-left:15px; width: 10rem;">
+                    <img class="card-img" src="static/images/i1.jfif" alt="Card image cap">
+                </div>
+            </div>
+        </div> {% endcomment %}
+
+        <div class="box">
+            <h3 class="text-start">Our TieUp's</h3>
+                <div class="row1 mr-3 d-flex ">
+                    <div class="bg-image hover-zoom border border-dark hover-shadow" style="margin-right: 10px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT82PPKwWwO0nX93UnGuFK83zAbxiQOblS6rg&usqp=CAU" class="" style="width: 200px; height: 200px;" />
+                    </div>
+                    <div class="bg-image hover-zoom border border-dark hover-shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTBU8WYHXaG7sv3LCGOw56ADJ3Mx7oWVk_Q&usqp=CAU" class="" style="width: 200px; height: 200px;" />
+                    </div> 
+                </div>
+
+                <div class="row2 mt-3 d-flex">
+                    <div class="bg-image hover-zoom border border-dark hover-shadow" style="margin-right: 10px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCz3Z7Pw63uOxmyE2k8P0Au9yPUEjYoRGMfQ&usqp=CAU" class="" style="width: 200px; height: 200px;" />
+                    </div>
+                    <div class="bg-image hover-zoom border border-dark hover-shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTbr71FFb49T4VzTK_2_NGONT2oGxhCh4_w&usqp=CAU" class="" style="width: 200px; height: 200px;" />
+                    </div>
+                </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+{% endblock blog %}

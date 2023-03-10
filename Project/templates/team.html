@@ -1,0 +1,313 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Team{% endblock title %}
+
+{% block team %}
+
+<div class="container">
+    <br>
+    <div class="card text-center shadow-lg">
+        <div class="card-header">
+            Take a look at our team!
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">We are a strong team of 9 doctors. Our team is highly qualified and skilled.</h5>
+            <p class="card-text">To book an appointment with our highly skilled doctors, click the following button</p>
+            <a href="{% url 'appointment' %}" class="btn btn-primary">Book Appointment</a>
+        </div>
+        {% comment %} <div class="card-footer text-muted">
+            2 days ago
+        </div> {% endcomment %}
+    </div>
+
+
+
+
+    {% comment %} <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 text-center">
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/i1.jfif" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Samidha Patil</b> <br>Team Genuis</h5><hr>
+              <p class="card-text">A philanthropist, dentist and a mother who loves to travel and explore different cultures of the world. While Dr. Samidhaa loves capturing some beautiful moments through the camera lens, she is also a fitness enthusiast and marathon runner.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Add extra info here</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/boyd1.jfif" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Shailesh Dongre</b> <br>Orthodontist</h5><hr>
+              <p class="card-text">A specialist in orthodontics from all india institute of medical sciences, (AIIMS), New Delhi with over 10 years of experience in treating all kinds of teeth and jaw misalignment with finesse and expertise.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Add extra info here</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/boyd1.jfif" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Chitrang Kolawale</b> <br>Endodontist</h5><hr>
+              <p class="card-text">Graduated with honors from Sharad Pawar Dental College, Wardha and post graduated from BBDCODS, Lucknow.
+                During his residency, Dr. Chitrang Kolawale researched on topics related to surgical endodontics. We are proud to say, Dr. Kolawale has lectured and presented posters both nationally and internationally on various dental topics.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 text-center">
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/girld1.png" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Ankita Nagrani</b> <br>Endodontist</h5><hr>
+              <p class="card-text">An M.D.S in conservative dentistry and endodontics from D.Y.Patil Dental College, Pune. Dr. Ankita Nagrani completed her B.D.S from Bharati Vidyapeeth Dental College and Hospital, Pune.
+                She is also a consulting endodontist and cosmetic dentist at some of the most renowned Hospitals.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/boyd1.jfif" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Sanket Patil</b> <br>Prosthodontist</h5><hr>
+              <p class="card-text">Often referred to as one of the best dental specialists in Pune, Dr. Patil completed his MDS – prosthodontics and dental implantology in 2013 from Rajiv Gandhi University of Health Sciences after his graduation from Maharashtra University of Health Sciences in 2008. Immediately after completing his education Dr. Patil started practicing dentistry.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/boyd1.jfif" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Bhushan Shinde</b> <br>Prothodontist</h5><hr>
+              <p class="card-text">After completing his graduation from the prestigious Government Dental College & Hospital, (GDC&H) Mumbai, Dr. Shinde is one of the very few to pursue and complete masters in prosthodontics, restorative & implant dentistry from College of Dental Sciences, Davangere, Karnataka. With an intensive experience as senior resident in Department of Oral Health Sciences of Post Graduate Institute of Medical Education & Research, (PGIMER) Chandigarh.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5 text-center">
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/boyd1.jfif" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Gururaj Bhosale</b> <br>Oral and Maxillofacial Surgeon</h5><hr>
+              <p class="card-text">With an experience of over 10 years, Dr. Bhosale is a champion when it comes to any kind of surgery.
+                He specialises in        
+                Oral surgery
+                Dental implants
+                Orthognathic oncosurgery
+                Maxillofacial trauma.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/boyd1.jfif" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Rajan Jadhav</b> <br>Oral and Maxillofacial Surgeon</h5><hr>
+              <p class="card-text">His expertise in Implants is inspiring. With great experience this Pune based veteran oral surgeon considers implants as his ultimate favorite treatment to perform.
+                Holds an impressive track record and experience of placing multiple implants for several patients in and outside Pune.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="static/images/boyd1.jfif" class="card-img-top" style="height:300px; width:390px; margin-left:12px; margin-top:12px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Dr.Aniruddha Kajale</b> <br>Periodontist & Implantologist</h5><hr>
+              <p class="card-text">Periodontist of The Team Dental is a very focused and hard working dentist. Dr. Kajale has achieved his masters in periodontics from Bapuji Dental College, Davangere. Beyond his masters degree, he was associated with D. Y. Patil Dental School, Lohegaon as an assistant professor for 5 years.
+                As a periodontist, his main focus is on management of deficient bone and soft tissue conditions in the field of periodontology and implantology. Dr. Kajale’s expertise also adds another feather to his hat as he has undergone advanced training in guided implant surgery from the DIO Digital Academy, Busan, Korea and keeps attending various continuing education courses to update his knowledge. Currently, we are proud to have a consultant who helps many private practices in Pune and in Mumbai in our team.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div> {% endcomment %}
+
+
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/girld1.png' %}" class="card-img-top" alt="Skyscrapers"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Samidha Patil</b></h5>
+              <div class="card-footer">
+              <small class="text-muted"><b>Team Genuis</b></small>
+            </div>
+              <p class="card-text">
+                A philanthropist, dentist and a mother who loves to travel and explore different cultures of the world. While Dr. Samidhaa loves capturing some beautiful moments through the camera lens, she is also a fitness enthusiast and marathon runner.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/boyd1.jfif' %}" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Shailesh Dongre</b></h5>
+              <div class="card-footer">
+              <small class="text-muted"><b>Orthodontist</b></small>
+            </div>
+              <p class="card-text">A specialist in orthodontics from all india institute of medical sciences, (AIIMS), New Delhi with over 10 years of experience in treating all kinds of teeth and jaw misalignment with finesse and expertise.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/boyd1.jfif' %}" class="card-img-top" alt="Palm Springs Road"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Chitrang Kolawale</b></h5>
+              <div class="card-footer">
+              <small class="text-muted"><b>Endodontist</b></small>
+            </div>
+              <p class="card-text">
+                Graduated with honors from Sharad Pawar Dental College, Wardha and post graduated from BBDCODS, Lucknow.
+                During his residency, Dr. Chitrang Kolawale researched on topics related to surgical endodontics. We are proud to say, Dr. Kolawale has lectured and presented posters both nationally and internationally on various dental topics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/girld1.png' %}" class="card-img-top" alt="Skyscrapers"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Ankita Nagrani</b></h5>
+              <div class="card-footer">
+              <small class="text-muted"><b>Endodontist</b></small>
+            </div>
+              <p class="card-text">
+                An M.D.S in conservative dentistry and endodontics from D.Y.Patil Dental College, Pune. Dr. Ankita Nagrani completed her B.D.S from Bharati Vidyapeeth Dental College and Hospital, Pune.
+                She is also a consulting endodontist and cosmetic dentist at some of the most renowned Hospitals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/boyd1.jfif' %}" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Sanket Patil</b></h5>
+              <div class="card-footer">
+              <small class="text-muted"><b>Prosthodontist</b></small>
+            </div>
+              <p class="card-text">Often referred to as one of the best dental specialists in Pune, Dr. Patil completed his MDS – prosthodontics and dental implantology in 2013 from Rajiv Gandhi University of Health Sciences after his graduation from Maharashtra University of Health Sciences in 2008. Immediately after completing his education Dr. Patil started practicing dentistry.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/boyd1.jfif' %}" class="card-img-top" alt="Palm Springs Road"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Bhushan Shinde</b></h5>
+              <div class="card-footer">
+              <small class="text-muted"><b>Prothodontist</b></small>
+            </div>
+              <p class="card-text">
+                After completing his graduation from the prestigious Government Dental College & Hospital, (GDC&H) Mumbai, Dr. Shinde is one of the very few to pursue and complete masters in prosthodontics, restorative & implant dentistry from College of Dental Sciences, Davangere, Karnataka. With an intensive experience as senior resident in Department of Oral Health Sciences of Post Graduate Institute of Medical Education & Research, (PGIMER) Chandigarh.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/boyd1.jfif' %}" class="card-img-top" alt="Skyscrapers"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Gururaj Bhosale</b></h5>
+              <div class="card-footer">
+              <small class="text-muted"><b>Oral and Maxillofacial Surgeon</b></small>
+            </div>
+              <p class="card-text">
+                With an experience of over 10 years, Dr. Bhosale is a champion when it comes to any kind of surgery.
+                He specialises in        
+                Oral surgery
+                Dental implants
+                Orthognathic oncosurgery
+                Maxillofacial trauma.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/boyd1.jfif' %}" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Rajan Jadhav</b></h5>
+              <div class="card-footer">
+                <small class="text-muted"><b>Oral and Maxillofacial Surgeon</b></small>
+              </div>
+              <p class="card-text">His expertise in Implants is inspiring. With great experience this Pune based veteran oral surgeon considers implants as his ultimate favorite treatment to perform.
+                Holds an impressive track record and experience of placing multiple implants for several patients in and outside Pune.</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col hover-shadow">
+          <div class="card h-100 shadow-lg">
+            <img src="{% static 'images/boyd1.jfif' %}" class="card-img-top" alt="Palm Springs Road"/>
+            <div class="card-body text-center">
+              <h5 class="card-title"><b>Dr. Aniruddha Kajale</b></h5>
+              <div class="card-footer">
+                <small class="text-muted"><b>Periodontist & Implantologist</b></small>
+              </div>
+              <p class="card-text">
+                Periodontist of The Team Dental is a very focused and hard working dentist. Dr. Kajale has achieved his masters in periodontics from Bapuji Dental College, Davangere. Beyond his masters degree, he was associated with D. Y. Patil Dental School, Lohegaon as an assistant professor for 5 years.
+                {% comment %} As a periodontist, his main focus is on management of deficient bone and soft tissue conditions in the field of periodontology and implantology. Dr. Kajale’s expertise also adds another feather to his hat as he has undergone advanced training in guided implant surgery from the DIO Digital Academy, Busan, Korea and keeps attending various continuing education courses to update his knowledge. Currently, we are proud to have a consultant who helps many private practices in Pune and in Mumbai in our team. {% endcomment %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock team %}

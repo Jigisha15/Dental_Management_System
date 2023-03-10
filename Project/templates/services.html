@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Services{% endblock title %}
+
+
+{% block services %}
+<div class="container text-center" style="padding-left: 230px;">
+    <div class="row mt-5">
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top " src="https://dentech.co.in/wp-content/uploads/2022/11/00002-removebg-preview.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Teeth Whitening</p>
+            </div>
+        </div>
+
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00010.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Root Canal Treatment</p>
+            </div>
+        </div>
+
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00001.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Dental Implants</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-5">
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00005.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Smile Design</p>
+            </div>
+        </div>
+
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00004.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Veneers</p>
+            </div>
+        </div>
+
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00009.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Crowns & Bridges</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row mt-5">
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00003.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Orthodontics</p>
+            </div>
+        </div>
+
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00006.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Restorative Dentistry</p>
+            </div>
+        </div>
+
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00008-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Dentures</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/00007-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Gum Treatment</p>
+            </div>
+        </div>
+
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/22.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Dental Extractions</p>
+            </div>
+        </div>
+
+        <div class="card hover-shadow" style="margin-right: 20px; width: 18rem;">
+            <img class="card-img-top" src="https://dentech.co.in/wp-content/uploads/2022/11/33.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Pediatric Dentistry</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="card text-center mt-5">
+    <div class="card-body">
+      <h5 class="card-title">Like our Services?</h5>
+      <p class="card-text">We are a team of highly qualified and skilled doctors.</p>
+      <a href="#" class="btn btn-transparent hover-shadow border">Book an Appointment</a>
+    </div>
+    <div class="card-footer text-dark">
+      We hope to see you @<a href="{% url 'location' %}" class="text-decoration-none text-dark hover-underline"><b>Clinic</b></a>
+    </div>
+</div>
+{% endblock services %}

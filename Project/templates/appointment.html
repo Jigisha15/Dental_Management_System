@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Appointment Form{% endblock title %}
+
+{% block appointment %}
+
+{% if messages %}
+ <div class="card notification-card notification-invitation">
+  <div class="card-body">
+    {% for message in messages %}
+      <div class="card-title">{{message}}</div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+<div class="container">
+  <h1 class="text-center">Book An Appointment</h1>
+  <h6 class="text-center text-dark">Kindly <a href="{% url 'login' %}" class="text-dark"> <i>Login</i></a> before filling the form.</h6>
+  <form action="" method="post" action="">
+    {% csrf_token %}
+      <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" class="form-control" id="name" name="name"  placeholder="Enter name">
+      </div>
+
+      <div class="form-group">
+        <label for="">Email address</label>
+        <input type="email" class="form-control" id="email" name="email"  placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      
+      <div class="form-group">
+        <label for="">Contact</label>
+        <input type="text" class="form-control" id="number" name="number"  placeholder="Enter contact number">
+      </div>
+
+      <div class="form-group">
+        <label for="">Date</label>
+        <input type="date" class="form-control" id="date" name="date"  placeholder="Enter preferred date">
+      </div>
+
+      <div class="form-group">
+        <label for="">Time</label>
+        <input type="time" class="form-control" id="time" name="time"  placeholder="Enter preferred time">
+      </div>
+
+      {% comment %} <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="password" name="password"  placeholder="Password">
+      </div> {% endcomment %}
+
+      <button type="submit" class="btn btn-primary mt-5">Submit</button>
+  </form>
+</div>
+{% endblock appointment %}

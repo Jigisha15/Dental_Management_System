@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login{% endblock title %}
+
+{% comment %} {% block login %}
+    <div class="container">
+        <div class="row my-3">
+            <div class="col-sm-6 offset-sm-3">
+                <h3>Login</h3>
+                <hr>
+                <form action="" method='post' novalidate class="shadow-lg p-5">
+                    {% csrf_token %}
+                    {% for fm in form %}
+                        {{fm.label_tag}} {{fm}} <small>{{fm.errors|striptags}}</small>  <br>
+                    {% endfor %}
+
+                    <small><a href="#">Forgot Password</a></small> <br>
+                    <input type="submit" class="btn btn-primary mt-4" value="Login">
+
+                    <div class="text-center text-primary fw-bold"><small>New User? <a href="{% url 'signup' %}" class="text-danger">Create an Account</a></small></div>
+
+                    {% if form.field_errors %}
+                        {% for error in form.non_field_errors %}
+                            <p class="alert alert-danger my-3">{{error}}</p>
+                        {% endfor %}
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock login %} {% endcomment %}
+
+
+{% block login %}
+<div class="container d-">
+    <h1 class="text-center">Login form</h1><hr>
+    <form action="" method="POST" class="border border-dark" style="padding: 50px">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control bg-light text-dark" id="username" name="username" placeholder="Enter Your Username" style="width:540px;">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control bg-light text-dark" id="password" name="password" placeholder="Enter Your Password" style="width: 540px;">
+        </div>
+
+        <button type="submit" class="mt-3 rounded">Submit</button>
+    </form>
+    {% if messages %}
+        {% for msg in messages %}
+            <div class="alert alert-{{msg.tags}} mt-3" role="alert">
+                {{msg}}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock login %}
+
